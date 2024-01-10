@@ -1,19 +1,3 @@
-<!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,13 +8,13 @@
 
   <!-- Put your site title here -->
   <title>
-    Chloe Fitzgibbons | Welcome to my portfolio.
+    Chloe Fitzgibbons | Talkmap
   </title>
 
   <meta name="description" content="Add small description of yourslef.">
   <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
   <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="bcccc.css" />
 </head>
 
 <body>
@@ -58,11 +42,10 @@
       <div class="header__text">
         <h1 class="heading-primary">
           <!-- Replace the following name with your name -->
-          <span>Chloe Fitzgibbons</span>
+          <span>Talkmap</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>Welcome to my portfolio!</p>
-        <a href="about.html" class="btn btn--pink">About Me</a>
+        <p><br>Date: 2023 - present<br>Role: Marketing Consultant</p>
       </div>
     </div>
   </header>
@@ -70,88 +53,55 @@
   <main role="main">
 
     <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>Featured Work</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Talkmap</h3>
-              <p>
-                Animated explainer videos in addition to a range of editorial (digital and print) content.
-              </p>
-              <ul class="work__list">
-                <li>Adobe After Effects</li>
-                <li>Adobe InDesign</li>
-                <li>Adobe Illustrator</li>
-                <li>Animation</li>
-                <li>Editorial Design</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="/talkmap.html" class="link__text">
-                  View Project <span>&rarr;</span>
-                </a>
-              </div>
+    <section>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <video id="TM_video" width=100% controls poster="./images/TMFoundations1_cover.png" class="center_90" >
+                    <source src="./videos/TM_Foundations_BigIdea1 copy.mp4" type="video/mp4" class="center_90">
+                </video>
+                <div class="text">Video 1 in the animated "Talkmap Foundations" series discussing Talkmap's founding principles.</div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/TM_animation_cover.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-          
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Breathe</h3>
-              <p>
-                A 2-D animation modeled after the traditional pixel art video game style.
-              </p>
-              <ul class="work__list">
-                <li>Adobe Photoshop</li>
-                <li>Adobe After Effects</li>
-                <li>Animation</li>
-                <li>Sound Design</li>
-                <li>Storyboarding</li>
-              </ul>
 
-              <div class="work__links">
-                <a href="/breathe.html" class="link__text">
-                  View Project <span>&rarr;</span>
-                </a>
-              </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <video id="TM_video" width=100% controls poster="./images/TMFoundations2_cover.png" class="center_90">
+                    <source src="./videos/TM_Foundations_BigIdea2 copy.mp4" type="video/mp4" class="center_90">
+                </video>
+                <div class="text">Video 2 in the animated "Talkmap Foundations" series discussing Talkmap's founding principles.</div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/Breathe_TitlePage.png" class="work__image" alt="Project 1" />
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <video id="TM_video" width=100% controls poster="./images/TMFoundations3_cover.png" class="center_90">
+                    <source src="./videos/TM_Foundations_BigIdea3 copy.mp4" type="video/mp4" class="center_90">
+                </video>
+                <div class="text">Video 3 in the animated "Talkmap Foundations" series discussing Talkmap's founding principles.</div>
             </div>
-          </div>          
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <video id="TM_video" width=100% controls poster="./images/TMFoundations4_cover.png" class="center_90">
+                    <source src="./videos/TM_Foundations_BigIdea4 copy.mp4" type="video/mp4" class="center_90">
+                </video>
+                <div class="text">Video 4 in the animated "Talkmap Foundations" series discussing Talkmap's founding principles.</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-      </div>
-      <p><br></p>
-      <p style="text-align: center;">
-        <a href="work.html" class="btn btn--pink">View All Work</a>
-      </p>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <script src="talkmap.js"></script>
+
     </section>
 
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a designer passionate about user experience?
-          Maybe you're looking for editorial illustration? animation? branding?
-          Or, have any questions or advice for me?
-          Even if it's to just say "Hi 👋", in any case, I'd love to connect with you!
-        </p>
-        <br>
-        <a href=mailto:chloe.fitzgibbons@gmail.com class="btn">Let's Chat</a>
-      </div>
-    </div>
-  </section>
 
   <!-- ***** Footer ***** -->
 
