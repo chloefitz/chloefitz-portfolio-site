@@ -1,35 +1,19 @@
-<!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/c_logo_small.png" />
+  <link rel="shortcut icon" type="image/png" href="./images/logo_light.png" />
 
   <!-- Put your site title here -->
   <title>
     Chloe Fitzgibbons | Welcome to my portfolio.
   </title>
 
-  <meta name="description" content="Add small description of yourslef.">
+  <meta name="description" content="Chloe Fitzgibbons: graphic designer, marketing strategist, animator, editorial illustrator">
   <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <meta name="keywords" content="Chloe Fitzgibbons : design, animation, editorial illustration, marketing, strategic consulting, graphic design, branding" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -41,15 +25,19 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="work.html" class="nav__link">Work</a></li>
+          <li class="nav__item">
+            <a href="index.html" class="nav__link" style="width: 5%;">
+              <img src="./images/logo_light.png">
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="work.html" class="nav__link">Work</a>
+          </li>
           <li class="nav__item">
             <a href="about.html" class="nav__link">About</a>
           </li>
           <li class="nav__item">
             <a href="contact.html" class="nav__link">Contact</a>
-          </li>
-          <li class="nav__item"><a href="index.html" class="nav__link">
-            <img src="./images/c_logo_fornav.png"></a>
           </li>
         </ul>
       </nav>
@@ -57,17 +45,33 @@
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Chloe Fitzgibbons</span>
+          <span><b>Hi there!</b></span>
         </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>Welcome to my portfolio!</p>
-        <a href="about.html" class="btn btn--pink">About Me</a>
+        <p>Welcome to my portfolio. I’m Chloe Fitzgibbons, a designer and marketing strategist ready to help your vision come to life.</p>
+        <h4><b><a href="work.html" class="btn btn--blue">Check it out</a></b></h4>
       </div>
     </div>
   </header>
 
   <main role="main">
+    <!-- <div class="scroll__container">
+      <div class="scroll-text">&nbsp;&nbsp;&nbsp;Graphic Design&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Animation&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+        Branding&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Editorial Illustration&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Strategic Consulting&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</div>
+    </div> -->
+    <div class="scroll">
+      <div class="m-scroll"><span2>Graphic Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Animation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Branding&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Editorial Illustration&nbsp;&nbsp&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strategic Consulting&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•</span2>
+        <span2>Graphic Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Animation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Branding&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Editorial Illustration&nbsp;&nbsp&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strategic Consulting&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•</span2>
+      </div>
+    </div>
+    <!-- <div class="dot__shadow">
+      <div class="bar">
+        <div class="scroll-text">
+          Graphic Design
+        </div>
+      </div>
+    </div> -->
 
     <!-- ***** Work ***** -->
 
@@ -77,29 +81,43 @@
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
+          
+          <!--  <style> >
+            .work__container {
+              will-change: transform;
+              transition: transform 450ms;
+            }
+            
+            .work__container:hover {
+              transition: transform 125ms;
+              transform: translateY(-10px);
+            }
+          </style> -->
 
           <div class="work__box">
             <div class="work__text">
               <h3>Talkmap</h3>
               <p>
-                Animated explainer videos in addition to a range of editorial (digital and print) content.
+                Animated explainer videos plus a range of editorial content for both digital and print.
               </p>
               <ul class="work__list">
                 <li>Adobe After Effects</li>
-                <li>Adobe InDesign</li>
                 <li>Adobe Illustrator</li>
                 <li>Animation</li>
+                <li>Adobe InDesign</li>
                 <li>Editorial Design</li>
               </ul>
 
               <div class="work__links">
-                <a href="/talkmap.html" class="link__text">
-                  View Project <span>&rarr;</span>
-                </a>
+                <div class="light-button__text">
+                  <a href="/talkmap-animations.html" class="link__text">
+                    &nbsp;View Project <span>&rarr;</span>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/TM_animation_cover.png" class="work__image" alt="Project 1" />
+              <img src="./images/TM_animation_cover copy.png" class="work__image" alt="Featured Project - Talkmap" />
             </div>
           </div>
           
@@ -118,21 +136,23 @@
               </ul>
 
               <div class="work__links">
-                <a href="/breathe.html" class="link__text">
-                  View Project <span>&rarr;</span>
-                </a>
+                
+                  <a href="/breathe.html" class="link__text">
+                    &nbsp;View Project <span>&rarr;</span>
+                  </a>
+                
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/Breathe_TitlePage.png" class="work__image" alt="Project 1" />
+              <img src="./images/Breathe_TitlePage copy.png" class="work__image" alt="Featured Project - Breathe" />
             </div>
           </div>          
         </div>
       </div>
       <p><br></p>
-      <p style="text-align: center;">
-        <a href="work.html" class="btn btn--pink">View All Work</a>
-      </p>
+      <div class="dark-button__text" style="text-align: center;">
+        <a href="work.html" class="btn btn--blue">View All Work</a>
+      </div>
     </section>
 
   <!-- ***** Contact ***** -->
@@ -142,16 +162,17 @@
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          Are you looking for a designer passionate about user experience?
+          Are you looking for a designer passionate about user experience? Looking to improve your digital marketing strategy?
           Maybe you're looking for editorial illustration? animation? branding?
-          Or, have any questions or advice for me?
-          Even if it's to just say "Hi 👋", in any case, I'd love to connect with you!
+          Or, maybe you just want to say "Hi 👋." In any case, I'd love to connect with you!
         </p>
         <br>
-        <a href=mailto:chloe.fitzgibbons@gmail.com class="btn">Let's Chat</a>
+        <a href="mailto:chloe.fitzgibbons@gmail.com" class="btn btn--inverse">Let's Chat</a>
       </div>
     </div>
   </section>
+  </main>
+</body>
 
   <!-- ***** Footer ***** -->
 
@@ -160,32 +181,21 @@
       <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
-          <a href=mailto:chloe.fitzgibbons@gmail.com title="Email">
-            <img src="./images/icons8-envelope-50-grayed.png" class="footer__social-image" alt="Email">
+          <a href="mailto:chloe.fitzgibbons@gmail.com" title="Email">
+            <img src="./images/email_blue.svg" class="footer__social-image" alt="Email">
           </a>
         </li>
         <li class="footer__social-link-item">
           <a href="https://github.com/chloefitz" title="Link to Github Profile" target="_blank" rel="noopener noreferrer">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+            <img src="./images/github_blue.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
         <li class="footer__social-link-item">
           <a href="https://www.linkedin.com/in/chloe-fitzgibbons/" target="_blank" rel="noopener noreferrer">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+            <img src="./images/linkedin_blue.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
           </a>
         </li>
       </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
     </div>
   </footer>
 
@@ -193,6 +203,5 @@
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
   <script src="./index.js"></script>
-</body>
 
 </html>
