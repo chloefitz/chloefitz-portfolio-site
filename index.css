@@ -433,9 +433,66 @@ body:not(.user-is-tabbing) a:focus {
     margin-right: var(--gutter-medium);
 }
 
+@media(max-width: 5000px) {
+    .nav {
+        justify-content: center;
+    }
+    .nav__link__img {
+        width: 5% ;
+    }
+}
+
+@media(max-width: 1280px) {
+    .nav {
+        justify-content: center;
+    }
+    .nav__link__img {
+        width: 5%; 
+    }
+}
+
+@media(max-width: 900px) {
+    .nav {
+        justify-content: center;
+    }
+    .nav__link__img {
+        width: 5%;
+    }
+}
+
+@media(max-width: 800px) {
+    .nav {
+        justify-content: center;
+    }
+    .nav__link__img {
+        width: 13%;
+    }
+}
+
+@media(max-width: 700px) {
+    .nav {
+        justify-content: center;
+    }
+    .nav__link__img {
+        width: 20%;
+    }
+}
+
+@media(max-width: 600px) {
+    .nav {
+        justify-content: center;
+    }
+    .nav__link__img {
+        width: 20%;
+    }
+}
+
 @media(max-width: 500px) {
     .nav {
         justify-content: center;
+    }
+    .nav__link__img {
+        width: 20%;
     }
 }
 
@@ -443,11 +500,17 @@ body:not(.user-is-tabbing) a:focus {
     .nav__item:not(:last-child) {
         margin-right: var(--gutter-normal);
     }
+    .nav__link__img {
+        width: 20%;
+    }
 }
 
 @media(max-width: 300px) {
     .nav {
         font-size: var(--font-size-small);
+    }
+    .nav__link__img {
+        width: 20%;
     }
 }
 
@@ -477,6 +540,38 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__link:hover::after {
+    right: 0;
+    height: 2px;
+    background: var(--dark-blue);
+}
+
+.nav__link__img {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: inherit;
+    transition: all .2s;
+    /*width: 5%;*/
+}
+
+.nav__link__img::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    display: inline-block;
+    height: 1rem;
+    background: var(--text-light);
+    transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.nav__link__img:hover {
+    color: var(--dark-blue);
+}
+
+.nav__link__img:hover::after {
     right: 0;
     height: 2px;
     background: var(--dark-blue);
@@ -601,7 +696,13 @@ body:not(.user-is-tabbing) a:focus {
       transform: translateX(-50%);
     }
   }
-  
+
+@media(max-width: 800px) {
+    span2 {
+        font-size: large;
+    }
+}
+
 
 /* --------------------------------------- */
 /* ----- Dot Drop Shadow ----- */
@@ -705,6 +806,18 @@ body:not(.user-is-tabbing) a:focus {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: var(--font-size-small);
+}
+
+.work__single {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.work__single__item {
+    width: 80vw;
 }
 
 .work__container {
